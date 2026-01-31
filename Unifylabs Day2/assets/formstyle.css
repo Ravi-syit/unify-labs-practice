@@ -1,0 +1,104 @@
+/* Form container */
+form {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #f8fafc; /* very light blue */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+legend {
+  padding: 0 0.75rem;
+  font-weight: bold;
+  color: #1e3a8a; /* soft blue */
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Inputs, selects, textareas */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.65rem;
+  margin-top: 0.4rem;
+  border: 1px solid #cbd5f5;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #60a5fa;
+  background-color: #ffffff;
+}
+
+/* Textareas */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Radio & checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.4rem;
+  accent-color: #2563eb; /* modern browsers */
+}
+
+/* Group titles inside fieldsets */
+fieldset p {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1.75rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+button[type="submit"]:hover {
+  background-color: #2563eb;
+}
+
+/* Reset button */
+button[type="reset"] {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+button[type="reset"]:hover {
+  background-color: #cbd5e1;
+}

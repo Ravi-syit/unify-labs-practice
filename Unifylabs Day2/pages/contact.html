@@ -1,0 +1,41 @@
+<main>
+  <h2>Contact Us</h2>
+  <section>
+    <address>
+      <p>123 Conference Blvd, City, Country</p>
+      <p>Email: <a href="mailto:info@devconf.com">info@devconf.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">+1 234-567-890</a></p>
+    </address>
+  </section>
+
+  <section>
+    <h3>Contact Form</h3>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required minlength="2">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option value="general">General Inquiry</option>
+        <option value="registration">Registration</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="8" maxlength="2000" required></textarea>
+
+      <p>Preferred Contact Method:</p>
+      <input type="radio" id="contactEmail" name="contactMethod" value="email">
+      <label for="contactEmail">Email</label>
+      <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+      <label for="contactPhone">Phone</label>
+
+      <label for="bestTime">Best Time to Call:</label>
+      <input type="time" id="bestTime" name="bestTime">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>

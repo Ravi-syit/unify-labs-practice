@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register for DevConf 2026</title>
+  <link rel="stylesheet" href="../assets/formstyle.css">
+</head>
+<body>
+
+  <!-- Section: Header -->
+  <header>
+    <h1>DevConf 2026</h1>
+  </header>
+
+  <!-- Section: Navigation -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section: Main Content -->
+  <main>
+    <h2>Register for DevConf 2026</h2>
+    <form action="#" method="POST">
+
+      <!-- Fieldset: Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required placeholder="John">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      </fieldset>
+
+      <!-- Fieldset: Professional Details -->
+      <fieldset>
+        <legend>Professional Details</legend>
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle">
+
+        <label for="company">Company/Organization:</label>
+        <input type="text" id="company" name="company">
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" max="50">
+
+        <label for="industry">Industry:</label>
+        <select id="industry" name="industry">
+          <optgroup label="Tech">
+            <option value="software">Software</option>
+            <option value="hardware">Hardware</option>
+          </optgroup>
+          <optgroup label="Healthcare">
+            <option value="medical">Medical</option>
+            <option value="biotech">Biotech</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <!-- Fieldset: Conference Preferences -->
+      <fieldset>
+        <legend>Conference Preferences</legend>
+        <p>Attendance Type:</p>
+        <input type="radio" id="inPerson" name="attendance" value="inPerson">
+        <label for="inPerson">In-Person</label>
+
+        <input type="radio" id="virtual" name="attendance" value="virtual">
+        <label for="virtual">Virtual</label>
+
+        <input type="radio" id="hybrid" name="attendance" value="hybrid">
+        <label for="hybrid">Hybrid</label>
+
+        <p>Select Workshops:</p>
+        <input type="checkbox" id="ws1" name="workshops" value="ws1">
+        <label for="ws1">Workshop 1</label>
+        <input type="checkbox" id="ws2" name="workshops" value="ws2">
+        <label for="ws2">Workshop 2</label>
+
+        <label for="tshirt">T-Shirt Size:</label>
+        <select id="tshirt" name="tshirt">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <label for="diet">Dietary Requirements:</label>
+        <textarea id="diet" name="diet" maxlength="500" placeholder="Any dietary restrictions"></textarea>
+      </fieldset>
+
+      <!-- Fieldset: Additional Information -->
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="accommodations">Special Accommodations:</label>
+        <textarea id="accommodations" name="accommodations"></textarea>
+
+        <label for="hear">How did you hear about us?</label>
+        <select id="hear" name="hear">
+          <option value="friend">Friend</option>
+          <option value="social">Social Media</option>
+        </select>
+
+        <label for="resume">Upload Resume/CV (PDF):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf">
+      </fieldset>
+
+      <!-- Fieldset: Terms & Conditions -->
+      <fieldset>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms & Conditions</label>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to newsletter</label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+
+  <!-- Section: Footer -->
+  <footer>
+    <p>&copy; 2026 DevConf. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

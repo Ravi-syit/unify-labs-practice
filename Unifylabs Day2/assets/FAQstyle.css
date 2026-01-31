@@ -1,0 +1,194 @@
+/* ====== GENERAL RESET ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9; /* light background */
+  color: #1e293b; /* dark slate text */
+  line-height: 1.6;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #2563eb; /* blue */
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #1e40af;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* ====== NAVIGATION ====== */
+nav {
+  background-color: #1e40af; /* darker blue */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0.5rem 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #3b82f6;
+}
+
+/* ====== MAIN CONTENT ====== */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 2rem;
+}
+
+/* ====== FAQ SECTIONS ====== */
+section {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+section h3 {
+  color: #2563eb;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* FAQ definition lists */
+dl dt {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #1e293b;
+}
+
+dl dd {
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+  color: #475569;
+}
+
+/* Links in FAQ */
+dl a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+dl a:hover {
+  color: #1e40af;
+}
+
+/* ====== FORM STYLING ====== */
+form {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+form fieldset {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+form legend {
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+form button {
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #1e40af;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1e40af;
+  color: #ffffff;
+  margin-top: 2rem;
+  border-top: 4px solid #2563eb;
+}
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+}
