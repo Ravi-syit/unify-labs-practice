@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Tech Conference 2026</title>
+
+  <!-- Main Site CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVIGATION (same as other pages) -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="speakers.html">Speakers</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="sponsors.html">Sponsors</a>
+  <a href="register.html">Register</a>
+</nav>
+
+<div class="container">
+
+<h1>Register for Tech Conference 2026</h1>
+
+<form>
+
+<!-- Personal Info -->
+<div class="card">
+<h3>Personal Information</h3>
+
+<label>First Name</label>
+<input type="text" required>
+
+<label>Last Name</label>
+<input type="text" required>
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Phone</label>
+<input type="tel">
+
+<label>Date of Birth</label>
+<input type="date">
+</div>
+
+<!-- Professional -->
+<div class="card">
+<h3>Professional Details</h3>
+
+<label>Job Title</label>
+<input type="text">
+
+<label>Company</label>
+<input type="text">
+
+<label>Experience (years)</label>
+<input type="number" min="0" max="50">
+
+<label>Industry</label>
+<select>
+  <option>Software</option>
+  <option>Hardware</option>
+  <option>Medical</option>
+  <option>Biotech</option>
+</select>
+</div>
+
+<!-- Preferences -->
+<div class="card">
+<h3>Conference Preferences</h3>
+
+<p>Attendance:</p>
+<input type="radio" name="attend"> In-Person
+<input type="radio" name="attend"> Virtual
+<input type="radio" name="attend"> Hybrid
+
+<p>Workshops:</p>
+<input type="checkbox"> Workshop 1
+<input type="checkbox"> Workshop 2
+
+<label>T-Shirt Size</label>
+<select>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+
+<label>Dietary Requirements</label>
+<textarea></textarea>
+</div>
+
+<!-- Additional -->
+<div class="card">
+<h3>Additional Info</h3>
+
+<label>Special Accommodations</label>
+<textarea></textarea>
+
+<label>How did you hear about us?</label>
+<select>
+<option>Friend</option>
+<option>Social Media</option>
+</select>
+
+<label>Upload Resume</label>
+<input type="file">
+</div>
+
+<!-- Terms -->
+<div class="card">
+<input type="checkbox" required> I agree to Terms  
+<br><br>
+<input type="checkbox"> Subscribe to newsletter
+</div>
+
+<a class="btn" href="#">Submit</a>
+<a class="btn" href="#">Reset</a>
+
+</form>
+
+</div>
+
+<footer>
+© 2026 Tech Conference
+</footer>
+
+</body>
+</html>
