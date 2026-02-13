@@ -1,0 +1,67 @@
+button{
+padding:15px 30px;
+border:none;
+cursor:pointer;
+font-size:16px;
+border-radius:5px;
+background:none;
+color:var(--text);
+}
+
+/* Neon Button */
+
+.neon-btn{
+border:2px solid cyan;
+color:cyan;
+box-shadow:0 0 10px cyan;
+transition:0.3s;
+}
+
+.neon-btn:hover{
+box-shadow:0 0 30px cyan;
+}
+
+/* Rotating Border */
+
+.rotate-btn{
+position:relative;
+overflow:hidden;
+}
+
+.rotate-btn::before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+background:conic-gradient(cyan,transparent);
+animation:spin 3s linear infinite;
+top:-50%;
+left:-50%;
+}
+
+.rotate-btn::after{
+content:"Rotating Border";
+position:absolute;
+inset:3px;
+background:var(--bg);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+/* Micro Animation Button */
+
+.micro-btn{
+background:var(--primary);
+color:white;
+transition:0.3s;
+}
+
+.micro-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}

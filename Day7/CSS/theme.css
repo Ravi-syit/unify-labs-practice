@@ -1,0 +1,26 @@
+:root{
+--bg:#ffffff;
+--text:#000000;
+--primary:#00bcd4;
+}
+
+#theme-toggle{
+display:none;
+}
+
+#theme-toggle:checked ~ header,
+#theme-toggle:checked ~ main{
+--bg:#0f172a;
+--text:#ffffff;
+}
+
+.theme-btn{
+position:fixed;
+top:20px;
+right:20px;
+background:var(--primary);
+padding:10px 15px;
+border-radius:50%;
+cursor:pointer;
+color:white;
+}
