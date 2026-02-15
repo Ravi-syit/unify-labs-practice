@@ -1,0 +1,45 @@
+.neon-btn{
+border:2px solid cyan;
+color:cyan;
+padding:12px 25px;
+box-shadow:0 0 10px cyan;
+}
+
+.rotate-btn{
+position:relative;
+overflow:hidden;
+padding:12px 25px;
+}
+
+.rotate-btn::before{
+content:"";
+position:absolute;
+inset:-50%;
+background:conic-gradient(cyan,transparent);
+animation:spin 3s linear infinite;
+}
+
+.rotate-btn::after{
+content:"Rotate";
+position:absolute;
+inset:3px;
+background:var(--bg);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+@keyframes spin{
+100%{transform:rotate(360deg);}
+}
+
+.micro-btn{
+background:var(--primary);
+color:white;
+padding:12px 25px;
+transition:.3s;
+}
+
+.micro-btn:hover{
+transform:translateY(-5px);
+}

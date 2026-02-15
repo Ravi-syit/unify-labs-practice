@@ -1,0 +1,57 @@
+:root{
+--bg:#ffffff;
+--text:#000000;
+--primary:#00bcd4;
+}
+
+/* hide checkbox */
+#theme-toggle{
+display:none;
+}
+
+/* default colors */
+body,
+header,
+main,
+section,
+article,
+aside,
+footer{
+background:var(--bg);
+color:var(--text);
+transition:.4s;
+}
+
+/* DARK MODE */
+#theme-toggle:checked ~ header,
+#theme-toggle:checked ~ main,
+#theme-toggle:checked ~ footer{
+--bg:#0f172a;
+--text:#ffffff;
+}
+
+/* navbar dark */
+#theme-toggle:checked ~ header .navbar{
+background:#020617;
+}
+
+/* toggle button */
+.theme-btn{
+cursor:pointer;
+background:white;
+padding:8px 12px;
+border-radius:50%;
+}
+
+#theme-toggle:checked ~ main .card{
+background:#020617;
+}
+#theme-toggle:checked ~ main .project-card{
+background:#020617;
+}
+#theme-toggle:checked ~ main .stat{
+background:#020617;
+}
+#theme-toggle:checked ~ main .bar{
+background:#020617;
+}
