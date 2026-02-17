@@ -1,0 +1,161 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body {
+background:#02010a;
+color:white;
+overflow-x:hidden;
+}
+
+/* PARTICLES */
+
+.particles span{
+position:absolute;
+width:4px;
+height:4px;
+background:#0ff;
+border-radius:50%;
+animation:float 20s linear infinite;
+opacity:.5;
+}
+
+@keyframes float{
+from{transform:translateY(100vh);}
+to{transform:translateY(-10vh);}
+}
+
+.particles{
+position:fixed;
+inset:0;
+z-index:1;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:2;
+position:relative;
+}
+
+/* NEON */
+
+.neon{
+font-size:4rem;
+color:#0ff;
+text-shadow:0 0 10px #0ff,0 0 40px #0ff;
+animation:flicker 2s infinite;
+}
+
+@keyframes flicker{
+0%,18%,22%,25%,53%,57%,100%{opacity:1;}
+20%,24%,55%{opacity:.3;}
+}
+
+/* TYPEWRITER */
+
+.typewriter{
+margin-top:20px;
+width:28ch;
+white-space:nowrap;
+overflow:hidden;
+border-right:3px solid #0ff;
+animation:typing 4s steps(28) infinite alternate;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:28ch}
+}
+
+/* BUTTONS */
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:20px;
+}
+
+button,.secondary{
+padding:12px 25px;
+background:#0ff;
+border:none;
+cursor:pointer;
+text-decoration:none;
+color:black;
+}
+
+.secondary{
+background:transparent;
+border:1px solid #0ff;
+color:#0ff;
+}
+
+/* MODAL */
+
+.modal{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.7);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:5;
+}
+
+.modal-box{
+background:#030014;
+padding:30px;
+border:1px solid #0ff;
+text-align:center;
+}
+
+.modal input{
+margin:20px 0;
+padding:10px;
+width:100%;
+}
+
+/* GALLERY */
+
+.gallery-title{
+text-align:center;
+margin:40px 0;
+}
+
+.masonry{
+columns:4 200px;
+gap:15px;
+padding:20px;
+}
+
+.masonry img{
+width:100%;
+margin-bottom:15px;
+filter:grayscale(100%);
+transition:.4s;
+}
+
+.masonry img:hover{
+filter:grayscale(0);
+transform:scale(1.03);
+}
+
+.back{
+display:block;
+text-align:center;
+margin:30px;
+color:#0ff;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+.neon{font-size:2.5rem}
+}
