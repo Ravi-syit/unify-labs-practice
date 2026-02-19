@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Magic 8-Ball & Calculator</title>
+  <link rel="stylesheet" href="../Day13/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🔮 Neon Magic 8-Ball & Calculator</h1>
+    <p>Interactive JavaScript Foundation Project</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Calculator Section -->
+    <section class="card calculator">
+      <h2>🧮 Calculator Engine</h2>
+
+      <div class="inputs">
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+      </div>
+
+      <button onclick="calculate()">Calculate</button>
+
+      <div class="results" id="calcResults"></div>
+    </section>
+
+    <!-- Magic 8 Ball Section -->
+    <section class="card magic">
+      <h2>🎱 Magic 8-Ball</h2>
+
+      <input type="text" id="question" placeholder="Ask your question...">
+      <button onclick="askMagic()">Ask</button>
+
+      <div class="ball">
+        <p id="magicAnswer">Your answer will appear here...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Built with HTML, CSS & JavaScript | Day 13 Project
+  </footer>
+
+  <script src="../Day13/script.js"></script>
+</body>
+</html>
