@@ -1,0 +1,105 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI'; }
+
+body {
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:white;
+  min-height:100vh;
+  padding:20px;
+  transition:0.4s;
+}
+
+body.light {
+  background: linear-gradient(135deg,#f1f5f9,#dbeafe);
+  color:#111;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+  flex-wrap:wrap;
+}
+
+.search-controls input, button {
+  padding:8px 12px;
+  margin:5px;
+  border:none;
+  border-radius:8px;
+}
+
+button {
+  background:#00c6ff;
+  color:white;
+  cursor:pointer;
+}
+
+.dashboard {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:20px;
+}
+
+.glass {
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(15px);
+  padding:20px;
+  border-radius:20px;
+}
+
+.stats-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:15px;
+}
+
+#forecastContainer {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+  gap:10px;
+}
+
+.day-card {
+  background:rgba(255,255,255,0.1);
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.compass {
+  width:150px;
+  height:150px;
+  border:5px solid white;
+  border-radius:50%;
+  margin:15px auto;
+  position:relative;
+}
+
+#needle {
+  width:4px;
+  height:60px;
+  background:red;
+  position:absolute;
+  top:15px;
+  left:50%;
+  transform-origin:bottom center;
+}
+
+.loading {
+  border:6px solid rgba(255,255,255,0.2);
+  border-top:6px solid white;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  margin:20px auto;
+  animation:spin 1s linear infinite;
+}
+
+.hidden { display:none; }
+
+@keyframes spin { to { transform:rotate(360deg); } }
+
+@media(max-width:900px){
+  .dashboard { grid-template-columns:1fr; }
+}
