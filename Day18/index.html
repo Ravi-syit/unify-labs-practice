@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Pet Simulator</title>
+    <link rel="stylesheet" href="../Day18/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>🐾 Digital Pet Simulator</h1>
+            <p>Interactive Virtual Companion</p>
+        </header>
+
+        <section class="pet-card">
+            <div class="pet-avatar">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pet">
+            </div>
+
+            <div class="pet-info">
+                <h2 id="petName"></h2>
+                <p id="petType"></p>
+            </div>
+        </section>
+
+        <section class="status-dashboard">
+            <div class="status-card">
+                <h3>❤️ Health</h3>
+                <div class="progress">
+                    <div id="healthBar" class="progress-fill"></div>
+                </div>
+                <span id="healthValue"></span>
+            </div>
+
+            <div class="status-card">
+                <h3>🍖 Hunger</h3>
+                <div class="progress">
+                    <div id="hungerBar" class="progress-fill hunger"></div>
+                </div>
+                <span id="hungerValue"></span>
+            </div>
+
+            <div class="status-card">
+                <h3>⚡ Energy</h3>
+                <div class="progress">
+                    <div id="energyBar" class="progress-fill energy"></div>
+                </div>
+                <span id="energyValue"></span>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="feedBtn">🍖 Feed</button>
+            <button id="playBtn">🎾 Play</button>
+            <button id="statusBtn">📊 Get Status</button>
+        </section>
+
+        <div id="log" class="log"></div>
+
+    </div>
+
+    <script src="../Day18/script.js"></script>
+</body>
+</html>
