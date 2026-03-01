@@ -1,0 +1,223 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+  --accent: #3b82f6;
+  --bg-light: #f4f7fb;
+  --bg-dark: #0f172a;
+  --card-light: #ffffff;
+  --card-dark: #1e293b;
+  --text-light: #111;
+  --text-dark: #f1f5f9;
+  --transition: 0.3s ease;
+}
+
+/* =========================
+   BASE STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  transition: var(--transition);
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.app {
+  display: flex;
+  width: 100%;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+aside {
+  width: 250px;
+  background: linear-gradient(180deg, var(--accent), #2563eb);
+  color: white;
+  padding: 25px;
+  transition: var(--transition);
+}
+
+aside h2 {
+  margin-bottom: 30px;
+}
+
+aside nav p {
+  margin: 15px 0;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+aside nav p:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+aside.collapsed {
+  width: 70px;
+  overflow: hidden;
+}
+
+aside.collapsed nav p {
+  display: none;
+}
+
+/* =========================
+   MAIN AREA
+========================= */
+
+main {
+  flex: 1;
+  padding: 40px;
+}
+
+header h1 {
+  margin-bottom: 25px;
+}
+
+/* =========================
+   SETTINGS CARD
+========================= */
+
+.card {
+  background: var(--card-light);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 600px;
+}
+
+body.dark .card {
+  background: var(--card-dark);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   FORM ROWS
+========================= */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row label {
+  font-weight: 500;
+}
+
+select,
+input[type="range"],
+input[type="color"] {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+body.dark select,
+body.dark input {
+  background: #334155;
+  color: white;
+  border: 1px solid #475569;
+}
+
+/* =========================
+   CHECKBOX
+========================= */
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: var(--accent);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* =========================
+   COMPACT MODE
+========================= */
+
+body.compact .row {
+  margin-bottom: 10px;
+}
+
+body.compact .card {
+  padding: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  aside.collapsed {
+    width: 100%;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
+
+/* =========================
+   SMOOTH THEME FADE
+========================= */
+
+body,
+.card,
+aside {
+  transition: background var(--transition), color var(--transition);
+}
