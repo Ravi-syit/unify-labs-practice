@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "69a52bf466c3765203251729"
+  },
+  "name": "iPhone 15",
+  "category": "Electronics",
+  "price": 80010,
+  "stock": 15,
+  "specs": {
+    "color": "Black",
+    "weight": "171g"
+  },
+  "featured": true
+},
+{
+  "_id": {
+    "$oid": "69a52bf466c376520325172a"
+  },
+  "name": "Laptop",
+  "category": "Electronics",
+  "price": 65010,
+  "stock": 10,
+  "specs": {
+    "color": "Silver",
+    "weight": "1.5kg"
+  },
+  "featured": true
+},
+{
+  "_id": {
+    "$oid": "69a52bf466c376520325172b"
+  },
+  "name": "T-Shirt",
+  "category": "Apparel",
+  "price": 999,
+  "stock": 55,
+  "specs": {
+    "color": "Blue",
+    "weight": "200g"
+  },
+  "featured": true
+},
+{
+  "_id": {
+    "$oid": "69a52bf466c376520325172c"
+  },
+  "name": "Sofa",
+  "category": "Furniture",
+  "price": 25000,
+  "stock": 8,
+  "specs": {
+    "color": "Brown",
+    "weight": "30kg"
+  },
+  "featured": true,
+  "tags": [
+    "new-arrival"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69a52bf466c376520325172d"
+  },
+  "name": "Dining Table",
+  "category": "Furniture",
+  "price": 40000,
+  "stock": 7,
+  "specs": {
+    "color": "Wood",
+    "weight": "50kg"
+  },
+  "featured": true,
+  "tags": [
+    "new-arrival"
+  ]
+}]
