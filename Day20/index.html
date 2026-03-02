@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Intelligence Pro</title>
+<link rel="stylesheet" href="../Day20/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>🌎 Weather Intelligence</h1>
+  <div class="search-controls">
+    <input type="text" id="cityInput" placeholder="Search City...">
+    <button onclick="searchCity()">Search</button>
+    <button onclick="getLocation()">📍</button>
+    <button onclick="toggleTheme()">🌓</button>
+  </div>
+</header>
+
+<div id="loading" class="loading hidden"></div>
+
+<section class="dashboard">
+
+  <div class="left-panel">
+
+    <div class="current-card glass">
+      <h2 id="locationName">--</h2>
+      <h1 id="currentTemp">--°C</h1>
+      <p id="weatherDesc">--</p>
+
+      <div class="stats-grid">
+        <div>Humidity <span id="humidity">--</span>%</div>
+        <div>Wind <span id="windSpeed">--</span> km/h</div>
+        <div>UV <span id="uvIndex">--</span></div>
+        <div>Air <span id="airQuality">--</span></div>
+      </div>
+    </div>
+
+    <div class="glass chart-card">
+      <h3>24H Analytics</h3>
+      <canvas id="weatherChart"></canvas>
+    </div>
+
+  </div>
+
+  <div class="right-panel">
+
+    <div class="glass forecast-card">
+      <h3>7-Day Forecast</h3>
+      <div id="forecastContainer"></div>
+    </div>
+
+    <div class="glass compass-card">
+      <h3>Wind Direction</h3>
+      <div class="compass">
+        <div id="needle"></div>
+      </div>
+      <p id="windDirText"></p>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="../Day20/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enterprise Settings Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../Day21/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside id="sidebar">
+    <h2>⚙ Settings</h2>
+    <nav>
+      <p data-i18n="dashboard">Dashboard</p>
+      <p data-i18n="profile">Profile</p>
+      <p data-i18n="preferences">Preferences</p>
+    </nav>
+  </aside>
+
+  <main>
+    <header>
+      <h1 data-i18n="appTitle">Enterprise Settings Manager</h1>
+    </header>
+
+    <section class="card">
+
+      <div class="row">
+        <label>Theme</label>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="system">System</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>Language</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="fr">French</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>Font Size</label>
+        <input type="range" id="fontSize" min="14" max="22">
+      </div>
+
+      <div class="row">
+        <label>Accent Color</label>
+        <input type="color" id="accentColor">
+      </div>
+
+      <div class="row">
+        <label>Layout Density</label>
+        <select id="density">
+          <option value="comfortable">Comfortable</option>
+          <option value="compact">Compact</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>
+          <input type="checkbox" id="sidebarCollapse">
+          Collapse Sidebar
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          <input type="checkbox" id="autoSave">
+          Auto Save Changes
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="saveBtn">Save</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script type="module" src="../Day21/javascript/main.js"></script>
+</body>
+</html>

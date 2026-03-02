@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Analytics</title>
+  <link rel="stylesheet" href="./design/style.css" />
+</head>
+<body>
+
+  <header class="header">
+  <h1>Nexus Analytics</h1>
+
+  <nav class="nav">
+    <a href="index.html">Dashboard</a>
+    <a href="favorites.html">Favorites</a>
+  </nav>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search cryptocurrency..." />
+
+    <select id="sortSelect">
+      <option value="market_cap_desc">Market Cap</option>
+      <option value="price_desc">Price</option>
+      <option value="name_asc">Name A-Z</option>
+    </select>
+
+    <button id="themeToggle">🌙</button>
+  </div>
+</header>
+
+  <main>
+    <div id="notification"></div>
+    <div id="loader" class="loader hidden"></div>
+    <div id="coinContainer" class="grid"></div>
+  </main>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

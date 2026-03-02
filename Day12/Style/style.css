@@ -1,0 +1,201 @@
+:root{
+--primary:#00f6ff;
+--dark:#02010a;
+--light:#ffffff;
+--card:#0b0b1f;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:var(--dark);
+color:var(--light);
+}
+
+/* OBJECT CLASSES */
+
+.primary{
+background:var(--primary);
+border:none;
+padding:12px 25px;
+cursor:pointer;
+}
+
+.card{
+background:var(--card);
+padding:15px;
+border-radius:8px;
+transition:transform .3s ease,opacity .3s ease;
+}
+
+.card:hover{
+transform:translateY(-8px);
+opacity:.9;
+}
+
+/* HEADER */
+
+.site-header{
+position:sticky;
+top:0;
+background:#030014;
+z-index:10;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+}
+
+.links a{
+margin-left:15px;
+color:var(--primary);
+text-decoration:none;
+}
+
+.icon-btn{
+background:none;
+border:none;
+color:white;
+font-size:22px;
+}
+
+/* HERO */
+
+.hero{
+height:60vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card img{
+width:100%;
+border-radius:6px;
+}
+
+/* SPEAKERS */
+
+.speaker-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+padding:30px;
+}
+
+.speaker{
+text-align:center;
+}
+
+.speaker img{
+width:100%;
+border-radius:50%;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+}
+
+/* BACK */
+
+.back{
+display:block;
+text-align:center;
+margin:30px;
+color:var(--primary);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+.hero{
+height:60vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+/* Coding background */
+background:
+linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+color:#000;
+}
+
+}
+/* SCHEDULE */
+
+.hero.small{
+height:auto;
+padding:60px 20px;
+}
+
+.schedule-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:30px;
+}
+
+.schedule-card{
+background:var(--card);
+padding:20px;
+border-radius:10px;
+transition:transform .3s ease, opacity .3s ease;
+}
+
+.schedule-card:hover{
+transform:translateY(-6px);
+opacity:.9;
+}
+
+.schedule-card h3{
+color:var(--primary);
+margin-bottom:8px;
+}
+
+.schedule-card h4{
+margin-bottom:5px;
+}
+
+.schedule-card span{
+display:block;
+margin-top:10px;
+opacity:.7;
+font-size:.9rem;
+}
+.hero h2{
+font-size:2.5rem;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+}

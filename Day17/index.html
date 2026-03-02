@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskMaster Pro</title>
+    <link rel="stylesheet" href="../Day17/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>⚡ TaskMaster</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Projects</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header>
+            <h1>Project Analytics Overview</h1>
+            <p>Track performance & revenue insights</p>
+        </header>
+
+        <!-- Stats Cards -->
+        <section class="stats">
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completedCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pendingCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p id="totalRevenue">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="totalExpenses">₹0</p>
+            </div>
+        </section>
+
+        <!-- Table -->
+        <section class="table-section">
+            <h2>All Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student</th>
+                        <th>Project</th>
+                        <th>Status</th>
+                        <th>Revenue</th>
+                    </tr>
+                </thead>
+                <tbody id="projectTable"></tbody>
+            </table>
+        </section>
+
+    </main>
+</div>
+
+<script src="../Day17/script.js"></script>
+</body>
+</html>

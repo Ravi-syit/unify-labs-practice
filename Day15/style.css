@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    color: #dff;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.terminal {
+    width: 90%;
+    max-width: 900px;
+    height: 85vh;
+    background: rgba(0, 20, 30, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 40px rgba(0,255,255,0.2);
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    color: #00f7ff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#output {
+    flex: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.input-line {
+    display: flex;
+}
+
+.prompt {
+    margin-right: 10px;
+    color: #00f7ff;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+}

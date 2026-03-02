@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Analytics Dashboard</title>
+    <link rel="stylesheet" href="../Day19/design/style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <header>
+        <h1>📊 Task Analytics</h1>
+        <nav>
+            <a href="../Day19/index.html">Tasks</a>
+            <a href="../Day19/stats.html">Statistics</a>
+        </nav>
+    </header>
+
+    <!-- SUMMARY CARDS -->
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <h3>Total Tasks</h3>
+            <p id="totalTasks"></p>
+        </div>
+
+        <div class="stat-card completed-card">
+            <h3>Completed</h3>
+            <p id="completedTasks"></p>
+        </div>
+
+        <div class="stat-card pending-card">
+            <h3>Pending</h3>
+            <p id="pendingTasks"></p>
+        </div>
+
+        <div class="stat-card overdue-card">
+            <h3>Overdue</h3>
+            <p id="overdueTasks"></p>
+        </div>
+
+    </section>
+
+    <!-- PROGRESS SECTION -->
+    <section class="progress-section">
+        <h3>Completion Progress</h3>
+        <div class="progress">
+            <div id="completionBar" class="progress-fill"></div>
+        </div>
+        <p id="completionPercent"></p>
+    </section>
+
+</div>
+
+<script src="../Day19/javascripts/stats.js"></script>
+</body>
+</html>
