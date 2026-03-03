@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZENITH Blog</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>ZENITH</h1>
+    <button id="toggleMode" class="btn-mode">🌙</button>
+  </header>
+
+  <main id="postsGrid" class="grid"></main>
+
+  <!-- Modal for full post -->
+  <div id="modal">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalContent"></p>
+      <small id="modalAuthor"></small>
+    </div>
+  </div>
+
+  <!-- Floating Action Button -->
+  <a href="editor.html" class="fab">+</a>
+
+  <script src="Javascript/main.js"></script>
+</body>
+</html>

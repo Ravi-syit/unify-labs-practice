@@ -1,0 +1,247 @@
+/* Base & Font */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn-mode {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn-mode:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+/* Blog Card */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #4e54c8;
+}
+
+.card p {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card small {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #4e54c8;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  background: #6c63ff;
+}
+
+/* Post Form */
+.post-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-form h2 {
+  text-align: center;
+  color: #4e54c8;
+}
+
+.post-form input,
+.post-form textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+  outline: none;
+  border-color: #4e54c8;
+  box-shadow: 0 0 10px rgba(78,84,200,0.2);
+}
+
+.btn-submit {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background: #4e54c8;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #6c63ff;
+  transform: scale(1.02);
+}
+
+/* Dark Mode */
+body.dark {
+  background: #111;
+  color: #f4f4f4;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #f4f4f4;
+}
+
+body.dark .post-form {
+  background: #1e1e1e;
+  color: #f4f4f4;
+}
+
+body.dark .fab {
+  background: #6c63ff;
+}
+/* Modal */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+#modal.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+#close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+} 
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.card-buttons .read-more {
+  background: #007bff;
+  color: white;
+}
+
+.card-buttons .read-more:hover {
+  background: #0056b3;
+}
+
+.card-buttons .delete-post {
+  background: #dc3545;
+  color: white;
+}
+
+.card-buttons .delete-post:hover {
+  background: #a71d2a;
+}
